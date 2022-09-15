@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1> Digite A</h1><br><br>
+        <input type="text" id="a">
+        <select name="cars" id="op">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+      </select>
+      <h1>Digite B</h1><br><br>
+      <input id="b">
+      <button onclick="eq1grau()">Resolver</button>
+      <h1 id="res">Vai Aparecer Aqui</h1>
+    </center>
+    <script>
+        var a =document.querySelector("#a")
+        var b =document.querySelector("#b")
+        var op =document.querySelector("#op")
+        var resultado =document.querySelector("#res")
+
+function eq1grau(){
+    if(op.value=="+"){
+        var eq=b.value - a.value
+        console.log(eq)
+        resultado.innerHTML="x = " + eq
+
+    }
+    else if(op.value=="-"){
+        var eq= parseint(b.value) + parseint(a.value)
+        console.log(eq)
+        resultado.innerHTML="x = " + eq
+    }
+    else if(op.value=="*"){
+        var eq= parseint(b.value) * parseint(a.value)
+        console.log(eq)
+        resultado.innerHTML="x = " + eq
+    }
+    else if(op.value=="/"){
+        var eq= b.value / a.value
+        console.log(eq)
+        resultado.innerHTML="x = " + eq
+    }
+}
+
+
+
+    </script>
+</body>
+</html>

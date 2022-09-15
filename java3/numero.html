@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Número</title>
+</head>
+
+<body align="center">
+    <h1>Número por Extenso</h1>
+    <input id="f"><br>
+    <button onclick="frutas()">Escrever</button>
+
+    <script>
+        var expr = document.querySelector("#f")
+        function frutas() {
+            switch (expr.value) {
+
+
+                case "1":
+                    console.log("Um");
+                    break;
+                case "2":
+                    console.log("Dois");
+                    break;
+
+                case "3":
+                    console.log("Três");
+                    break;
+
+                case "4":
+                    console.log("Quatro");
+                    break;
+
+                case "5":
+                    console.log("Cinco");
+                    break;
+
+                default:
+                    console.log("Desculpe, não conheço este número" + expr.value + ".")
+            }
+        }
+
+    </script>
+
+
+</body>
+
+</html>

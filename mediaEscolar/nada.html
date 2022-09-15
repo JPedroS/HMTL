@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 2</title>
+</head>
+
+<body>
+    <h1>Calculadora de Média Escolar</h1>
+    <h2>Digite o nome</h2>
+    <input type="nome" name="" id="">
+    <h2>Primeiro Número</h2>
+    <input id="n1" type="number" min="1" step="1"><br><br>
+    <h2>Segundo Número</h2>
+    <input id="n2" type="number" min="1" step="1"><br><br>
+    <h2>Terceiro Número</h2>
+    <input id="n3" type="number" min="1" step="1"><br><br>
+    <h2>Quarto Número</h2>
+    <input id="n4" type="number" min="1" step="1"><br><br>
+
+    <button onclick="aparecer()">Aparecer</button><br><br>
+    O Resultado é <span></span><br>
+    <script>
+        var nome = document.querySelector('#nome')
+        var n1 = document.querySelector('#n1')
+        var n2 = document.querySelector('#n2')
+        var n3 = document.querySelector('#n3')
+        var n4 = document.querySelector('#n4')
+        var resultado = document.querySelector('span')
+
+        function aparecer() { resultado.innerHTML= (parseFloat(n1.value) + parseFloat(n2.value) + parseFloat(n3.value) + parseFloat(n4.value)) / 4 }
+
+
+
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

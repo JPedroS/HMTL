@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 3</title>
+</head>
+<body>
+    <center>
+    <h1>Calculadora</h1>
+        <h2>Primeiro Número</h2>
+    <input id="n1" type="number"><br><br>
+    <h2>Segundo Número</h2>
+    <input id="n2"type="number"><br><br>
+    <button onclick="somar()">SOMAR</button>
+       <button onclick="subtrair()">SUBTRAIR</button>
+       <button onclick="multiplicacao()">MULTIPLICAÇÃO</button>
+       <button onclick="divisao()">DIVISÃO</button><br><br>
+    <button id="aparecer">Vai Aparecer Aqui!</button>
+</center>
+
+    <script>
+        var n1 = document.querySelector("#n1")
+        var n2 = document.querySelector("#n2")
+    var resultado = document.querySelector("#aparecer")
+    
+    function somar(){
+      resultado.innerHTML ="O Resultado é "
+       + (parseFloat(n1.value)+
+      parseInt(n2.value))
+    }       
+    function subtrair(){
+      resultado.innerHTML ="O Resultado é "
+       + (parseFloat(n1.value)-
+      parseInt(n2.value))
+    } 
+    function multiplicacao(){
+      resultado.innerHTML ="O Resultado é "
+       + (parseFloat(n1.value)*
+      parseInt(n2.value))
+    } 
+    function divisao(){
+      resultado.innerHTML ="O Resultado é "
+       + (parseFloat(n1.value)/
+      parseInt(n2.value))
+    } 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

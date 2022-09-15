@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <h1>Digite Nome</h1>
+        <input id="nome">
+        <h1>Nota 1</h1>
+        <input id="n1">
+        <h1>Nota 2</h1>
+        <input id="n2">
+        <h1>Nota 3</h1>
+        <input id="n3">
+        <h1>Nota 4</h1>
+        <input id="n4">
+        <h1>Nota 5</h1>
+        <input id="n5">
+        <p></p>
+        <button onclick="aparecer()">Aparecer</button>
+        <h1 id="bot">Vai Aparecer Aqui</h1>
+    </center>
+    <script>
+        var nome = document.querySelector('#nome')
+        var n1 = document.querySelector('#n1')
+        var n2 = document.querySelector('#n2')
+        var n3 = document.querySelector('#n3')
+        var n4 = document.querySelector('#n4')
+        var n5 = document.querySelector('#n5')
+        var resultado = document.querySelector('#bot')
+        function aparecer() {
+            media = (parseInt(n1.value) + parseInt(n2.value) +
+                parseInt(n3.value) + parseInt(n4.value) + parseInt(n5.value)) / 5
+            if (media < 6) {
+                resultado.innerHTML = "O Resultado é Reprovado e sua Nota é: " + media 
+            } else {
+                resultado.innerHTML = "O Resultado é Aprovado e sua Nota é:  " + media
+            }
+
+        }       
+    </script>
+</body>
+
+</html>

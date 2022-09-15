@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Logicos</title>
+</head>
+<body>
+    <center>
+        <h1>Operadores Logicos</h1>
+        <h2>Maior que 6</h2>
+        <input type="number"id="n1"><br><br>
+        <h2>Menor que 6</h2>
+        <input type="number"id="n2"><br><br>
+        <button onclick="num()">Aqui</button>
+ 
+    </center>
+    <script>
+var n1 = document.querySelector("#n1")
+var n2 = document.querySelector("#n2")
+var resultado= document.querySelector("#num")
+    
+    function num(){
+if(n1.value>6){
+console.log("Verdadeiro")
+var op = parseInt(n1.value) + 5
+console.log(op)
+}
+else {
+    console.log("Falso")
+
+}
+if(n2.value<6){
+    console.log("Verdadeiro")
+   var ip=parseInt(n2.value) - 5
+    console.log(ip)
+}
+else {
+    console.log("Falso")
+                                        
+
+    }
+
+}  
+    
+    
+    
+    
+    
+    
+    </script>
+</body>
+</html>

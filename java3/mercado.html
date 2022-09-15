@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruta</title>
+</head>
+
+<body align="center">
+    <h1>Mercadinho da Esquina</h1>
+    <input id="f"><br>
+    <button onclick="frutas()">Comprar</button>
+
+    <script>
+        var expr = document.querySelector("#f")
+        function frutas() {
+            switch (expr.value) {
+
+
+                case "Laranja":
+                    console.log("As Laranjas custam R$3,50 o quilo.");
+                    break;
+                case "Maçã":
+                    console.log("As Maçãs custam R$2,50 o quilo");
+                    break;
+
+                case "Banana":
+                    console.log("As Bananas custam R$3,00 o quilo");
+                    break;
+
+                case "Mamão":
+                case "Melancia":
+                    console.log("Os Mamões e as Melancias custam R$4,00 o quilo");
+                    break;
+
+                case "Abóbora":
+                    console.log("As Abóboras custam R$5,00 o quilo");
+                    break;
+
+                case "Limão":
+                    console.log("Os Limões custam R$2,00 o quilo");
+                    break;
+
+                default:
+                    console.log("Desculpe, estamos sem nenhuma" + expr.value + ".")
+            }
+            console.log("Tem algo mais que você gostaria de levar?");
+        }
+
+    </script>
+
+
+</body>
+
+</html>

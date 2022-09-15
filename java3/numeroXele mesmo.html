@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade3</title>
+</head>
+
+<body>
+    <center>
+        <h1>Coloque os Numeros</h1>
+        <h2>Primero Número</h2>
+        <input id="n1" type="number">
+        <h2>Segundo Número</h2>
+        <input id="n2" type="number">
+        <h2>Terceiro Número</h2>
+        <input id="n3" type="number">
+        <h2>Quarto Número</h2>
+        <input id="n4" type="number"><br><br>
+        <button onclick="tudo()">Vai Aparecer Aqui!</button>
+
+    </center>
+    <script>
+        var n1 = document.querySelector("#n1")
+        var n2 = document.querySelector("#n2")
+        var n3 = document.querySelector("#n3")
+        var n4 = document.querySelector("#n4")
+
+        function tudo() {
+            var numero1 = parseInt(n1.value) * parseInt(n1.value)
+            var numero2 = parseInt(n2.value) * parseInt(n2.value)
+            var numero3 = parseInt(n3.value) * parseInt(n3.value)
+            var numero4 = parseInt(n4.value) * parseInt(n4.value)
+            if (numero3 >= 1000){
+                var nada = "conta"
+            }
+
+            switch (nada) {
+                case "conta":
+                    console.log("Resultado do Terceiro Número " + numero3)                    
+                    break;
+                default:
+                console.log("Resultado do Primeiro Número " + numero1) 
+                console.log("Resultado do Segundo Número " + numero2) 
+                console.log("Resultado do Terceiro Número " + numero3) 
+                console.log("Resultado do Quarto Número " + numero4)   
+                console.log("Insira os Números")
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

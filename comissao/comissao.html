@@ -1,0 +1,43 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <h1>Digite Nome</h1>
+        <input id="nome">
+        <h1>Identificação do vendedor</h1>
+        <input id="identificação">
+        <h1>Código da peça</h1>
+        <input id="codigo">
+        <h1>Preço unitário da peça</h1>
+        <input id="preço">
+        <h1>Quantidade Vendida</h1>
+        <input id="vendas">
+        <p></p>
+        <button onclick="com()">Calcular Comissão</button>
+        <h1 id="r">Comissão:</h1>
+
+        <script>
+            var comi = 0.05;
+            var nome = document.querySelector('#nome')
+            var identificação = document.querySelector('#identificação')
+            var codigo = document.querySelector('#codigo')
+            var vendas = document.querySelector('#vendas')
+            var preço = document.querySelector('#preço')
+            var vendas = document.querySelector('#vendas')
+            var r = document.querySelector('#r')
+
+            function com (){
+                var prt = (parseInt(preço.value) * parseInt(vendas.value));
+                r.innerHTML = prt * comi;
+            }
+</script>
+</body>
+</head>
+</html>

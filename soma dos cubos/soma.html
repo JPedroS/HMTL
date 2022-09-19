@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cubos</title>
+</head>
+<body>
+    <center>
+        <h1>Soma dos Cubos</h1>
+        <h2>Coloque A</h2>
+        <input type="number" id="n1">
+        <h2>Coloque B</h2>
+        <input type="number" id="n2">
+        <button onclick="conta()">Calcular</button><br><br>
+        <button id="nada">Vai Aparecer Aqui</button>
+    </center>
+<script>
+    var n1 = document.querySelector("#n1")
+    var n2 = document.querySelector("#n2")
+    var resultado = document.querySelector("#nada")
+
+    function conta(){
+        var a = parseInt(n1.value)**3;
+        var b = parseInt(n2.value)**3;
+var valor = (((parseInt(n1.value)**3) + parseInt(n2.value)**3))
+console.log(valor)
+console.log(a)
+console.log(b)
+resultado.innerHTML= "O Resultado é "+valor
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
